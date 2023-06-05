@@ -1,0 +1,62 @@
+<html>
+ <head>
+  <meta content='noindex,nofollow' name='robots'>
+  <title>List of All Books</title>
+ </head>
+
+<div id="body">
+<br />
+<center>
+
+ <form method="post" action="http://undcemcs02.und.edu/~tyler.franzen/cgi-bin/A1520/listbooks.pl?name=
+Tyler">
+        <tr align="center" valign="middle" bgcolor="#CCEEFF">
+         <td colspan="5">
+   <font face="Verdana, Arial, Helvetica" size="0">
+   <input type="submit" name="act" value="List Books"> &nbsp; &nbsp; &nbsp; &nbsp;
+   <input type="submit" name="act" value="Main" onclick="history.go(-1);return false;"> &nbsp; &nbsp; &nbsp; &nbsp;
+   <input type="submit" name="act" value="Help"> &nbsp; &nbsp; &nbsp; &nbsp;
+   <input type="reset"             value="Reset">
+   </font>
+         </td>
+        </tr>
+        </form>
+
+
+ <table width="95%" bgcolor="navy" cellspacing="2" cellpadding="12" border="0" class="shadow">
+  <tr>
+   <th bgcolor="#336699" width="10%">
+    <font size="-1" face="Verdana, Arial, Helvetica" color="#FFFFFF">Quantity</font>
+   </th>
+   <th bgcolor="#336699" width="10%">
+          <font size="-1" face="Verdana, Arial, Helvetica" color="#FFFFFF">Cover</font> 
+         </th>
+         <th bgcolor="#336699" width="56%">
+          <font size="-1" face="Verdana, Arial, Helvetica" color="#FFFFFF">Title</font>
+         </th>
+         <th bgcolor="#336699" width="12%">
+          <font size="-1" face="Verdana, Arial, Helvetica" color="#FFFFFF">Rating</font> 
+         </th>
+         <th bgcolor="#336699" width="12%" valign="middle">
+          <font size="-1" face="Verdana, Arial, Helvetica" color="#FFFFFF">Compare Prices</font>
+         </th>
+        </tr>
+
+ <form method="post" action="http://undcemcs02.und.edu/~tyler.franzen/cgi-bin/A1520/check.pl?interface=4">
+ <tr bgcolor="cyan">
+  <td colspan="3">
+   <font face="Verdana, Arial, Helvetica" SIZE="1">
+   &nbsp; <b>Password:</b></font>
+   <input type="password" size="16" name="password" value="tylerschoice"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <input type="submit" name="act" value="Display source"> &nbsp; &nbsp;
+   <input type="submit" name="act" value="Help"> &nbsp; &nbsp;
+   <input type="reset" value="Reset">
+   </font>
+  </td>
+ </tr>
+ </form>
+</table>
+
+  <br /><br /><br /><br /><br />
+ </body>
+</html>

@@ -1,0 +1,19 @@
+<?php
+
+if ( $_POST['act'] == "Register" ) {
+  header( "Content-type: text/html" );
+  include('register.html');
+}
+
+elseif ( $_POST['act'] == "Crawl web pages" ) {
+  header( "Content-type: text/plain" );
+  system( "/usr/bin/php  crawler.php  $URL $choice" );
+}
+
+elseif ( $_POST["act"] == "List web pages" ) {
+  header( "Content-type: text/plain" );
+  system( "/usr/bin/php  list.php  $PAGE" );
+}
+
+elseif ( $_POST["act"] == "Submit choice" ) {
+  header( "Content-type: text/plain" );

@@ -1,0 +1,97 @@
+<?php
+
+if ( $_POST['act'] == "Show" ) {
+  header( "Content-type: text/plain" );
+  $username = "tyler.franzen@undcsmysql";
+  $database = "tyler_franzen";
+  $password = "tyler8629";
+  $host     = "undcsmysql.mysql.database.azure.com";
+  $conn     = new mysqli( $host,  $username, $password, $database );
+
+  if ($conn->connect_error) {
+     die('Could not connect: '. $conn->connect_error);
+  }
+
+
+  if(isset($_POST['all'])) {
+    echo "You have selected: " . $_POST['all'] . "\n";  //  Displaying Selected Value
+    if ($_POST['all'] == "all") {
+      $sql = "SELECT * FROM book";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+          echo "Start of all book information: " . "\n";
+	  while($row = $result->fetch_assoc()) {
+
+            echo "ID: " . $row["bookID"] . " - Title: " . $row["title"] . " - ISBN: " . $row["isbn"] . " - Book price: " . $row["bookprice"] . " - Royalty: " . $row["royalty"] . " - Authors: " . $row["authors"] . "\n";
+      	  }
+          echo "\n";
+      } else {
+        echo "0 results";
+      } 
+    }
+
+    if ($_POST['all'] == "10") {
+      $sql = "SELECT * FROM book WHERE bookprice BETWEEN 0 AND 10";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+          echo "Start of all book information: " . "\n";
+          while($row = $result->fetch_assoc()) {
+            echo "ID: " . $row["bookID"] . " - Title: " . $row["title"] . " - ISBN: " . $row["isbn"] . " - Book price: " . $row["bookprice"] . " - Royalty: " . $row["royalty"] . " - Authors: " . $row["authors"] . "\n";
+          }
+          echo "\n";
+      } else {
+        echo "0 results";
+      }
+    }
+   if ($_POST['all'] == "20") {
+      $sql = "SELECT * FROM book WHERE bookprice BETWEEN 10 AND 20";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+          echo "Start of all book information: " . "\n";
+          while($row = $result->fetch_assoc()) {
+            echo "ID: " . $row["bookID"] . " - Title: " . $row["title"] . " - ISBN: " . $row["isbn"] . " - Book price: " . $row["bookprice"] . " - Royalty: " . $row["royalty"] . " - Authors: " . $row["authors"] . "\n";
+          }
+          echo "\n";
+      } else {
+        echo "0 results";
+      }
+    }
+    if ($_POST['all'] == "30") {
+      $sql = "SELECT * FROM book WHERE bookprice BETWEEN 20 AND 30";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+          echo "Start of all book information: " . "\n";
+          while($row = $result->fetch_assoc()) {
+            echo "ID: " . $row["bookID"] . " - Title: " . $row["title"] . " - ISBN: " . $row["isbn"] . " - Book price: " . $row["bookprice"] . " - Royalty: " . $row["royalty"] . " - Authors: " . $row["authors"] . "\n";
+          }
+          echo "\n";
+      } else {
+        echo "0 results";
+      }
+    }
+    if ($_POST['all'] == "100") {
+      $sql = "SELECT * FROM book WHERE bookprice BETWEEN 30 AND 100";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+          echo "Start of all book information: " . "\n";
+          while($row = $result->fetch_assoc()) {
+            echo "ID: " . $row["bookID"] . " - Title: " . $row["title"] . " - ISBN: " . $row["isbn"] . " - Book price: " . $row["bookprice"] . " - Royalty: " . $row["royalty"] . " - Authors: " . $row["authors"] . "\n";
+          }
+          echo "\n";
+      } else {
+        echo "0 results";
+      }
+    }
+  }
+
+
+  $conn->close();
+
+}
+
+?>

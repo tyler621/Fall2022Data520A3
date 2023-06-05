@@ -1,0 +1,36 @@
+<html>
+  <div class="container">
+    <h1>Bookstore</h1>
+    <p>Please fill out all the information to enter in books and authors.</p>
+    <hr>
+  <form method="post" action="http://undcemcs02.und.edu/~tyler.franzen/cgi-bin/A3520/bookstore.php">
+
+   <br></br>
+   &nbsp; Title:
+   <input type="text" name="title" id="title" size="64" value="Web Database Applications with PHP and MySQL">
+   <br /><font size="0"><br /></font>
+   &nbsp; ISBN:
+   <input type="text" name="ISBN" id="ISBN" size="10" maxlength="10" value="0596005431">
+   <br /><font size="0"><br /></font>
+   &nbsp; Price:
+   <input type="number" name="price" id="price" size="10" maxlength="10" value="39.99">
+   <br></br>
+   &nbsp; Royalty:
+   <input type="number" name="royalty" id="royalty" size="10" maxlength="10" value="10"%>
+   <br></br>
+   &nbsp; Authors:
+   <input type="text" name="authors" id="authors" size="64" maxlength="10" placeholder="Enter all authors in.">
+
+   <br></br>
+   <input type="submit" name="act" value="Enter" Enter>
+   &nbsp; &nbsp; &nbsp;
+
+
+   <br></br>
+   <br></br>
+   <br></br>
+
+  </div>
+  </form>
+
+</html>

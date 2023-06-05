@@ -1,0 +1,72 @@
+<html>
+ <head>
+  <meta content='noindex,nofollow' name='robots'>
+  <title>Update List</title>
+ </head>
+ <font size='0'><br /></font>
+
+<div id="body">
+ <table width='100%' height='80%'>
+  <tr>
+   <td align='center' valign='middle'>
+
+<table width="80%" cellspacing="0" cellpadding="15" border="0" class="shadow">
+ <form method="post" action="http://undcemcs02.und.edu/~tyler.franzen/cgi-bin/A2520/updatelist.php">
+ <tr bgcolor="#black">
+  <th align="left">
+   <font face="Verdana, Arial, Helvetica" color="white" size="2"> &nbsp; 
+Enter and Update Books Here</font>
+  </th>
+ </tr>
+
+ <tr bgcolor="#grey">
+  <td width="75%" valign="middle">
+   <font face="Verdana, Arial, Helvetica" size="2">
+   <font size="0"><br /></font>
+   &nbsp; Title: 
+   <input type="text" name="title" id="title" size="64" value="Web Database Applications with PHP and MySQL">
+   <br /><font size="0"><br /></font>
+   &nbsp; ISBN:
+   <input type="text" name="ISBN" id="ISBN" size="10" maxlength="10" value="0596005431"> 
+   <br /><font size="0"><br /></font> 
+   &nbsp; Price:
+   <input type="text" name="price" id="price" size="10" maxlength="10" value="39.99">
+   </font>
+   <p align="center">
+   <input type="submit" name="act" value="Enter">
+   &nbsp; &nbsp; &nbsp;
+   <input type="submit" name="act" value="List">
+   &nbsp; &nbsp; &nbsp;
+   <input type="submit" name="act" value="Main">
+   &nbsp; &nbsp; &nbsp;
+   <input type="submit" name="act" value="Help">
+   &nbsp; &nbsp; &nbsp;
+   <input type="reset" value="Reset">
+   <font size="0"><br /></font><font size="0"><br /></font>
+  </td>
+ </tr>
+ </form>
+
+
+
+ <form method="post" action="http://undcemcs02.und.edu/~tyler.franzen/cgi-bin/A1520/check.pl?interface=3">
+ <tr bgcolor="cyan">
+  <td colspan="3">
+   <font face="Verdana, Arial, Helvetica" SIZE="1">
+   &nbsp; <b>Password:</b></font>
+   <input type="password" size="16" name="password" value="tylerschoice"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <input type="submit" name="act" value="Display source"> &nbsp; &nbsp;
+   <input type="submit" name="act" value="Help"> &nbsp; &nbsp;
+   <input type="reset" value="Reset">
+   </font>
+  </td>
+ </tr>
+ </form>
+
+</table>
+
+  </td>
+ </tr>
+</table>
+</body>
+</html>
